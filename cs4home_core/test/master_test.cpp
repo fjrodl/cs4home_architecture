@@ -22,8 +22,8 @@
 
 TEST(flow_test, flow_creation)
 {
-  Flow flow1({"A", "B", "C", "D"});
-  Flow flow2({"A", "B", "C", "E"});
+  cs4home_core::Flow flow1({"A", "B", "C", "D"});
+  cs4home_core::Flow flow2({"A", "B", "C", "E"});
 
   ASSERT_EQ(flow1.get_nodes(), std::vector<std::string>({"A", "B", "C", "D"}));
   ASSERT_EQ(flow2.get_nodes(), std::vector<std::string>({"A", "B", "C", "E"}));
