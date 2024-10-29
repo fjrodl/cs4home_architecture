@@ -59,7 +59,6 @@ protected:
   Meta::SharedPtr meta_;
   Coupling::SharedPtr coupling_;
 
-  std::string name_;
   std::string core_name_;
   std::string afferent_name_;
   std::string efferent_name_;
