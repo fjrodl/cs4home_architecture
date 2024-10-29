@@ -39,9 +39,9 @@ public:
     std::string param_name = "simple_image_input.topics";
     parent_->get_parameter(param_name, input_topic_names_);
 
-    RCLCPP_DEBUG(parent_->get_logger(), "[SimpleImageInput] Configuring %zu inputs [%s]",
-      input_topic_names_.size(),
-      param_name.c_str());
+    RCLCPP_DEBUG(
+      parent_->get_logger(), "[SimpleImageInput] Configuring %zu inputs [%s]",
+      input_topic_names_.size(), param_name.c_str());
 
     for (size_t i = 0; i < input_topic_names_.size(); i++) {
       if (create_subscriber(input_topic_names_[i], "sensor_msgs/msg/Image")) {

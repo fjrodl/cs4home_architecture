@@ -109,7 +109,8 @@ TEST(cognitive_module_test, afferent_on_subscription)
   afferent->set_mode(cs4home_core::Afferent::CALLBACK);
   ASSERT_EQ(afferent->get_mode(), cs4home_core::Afferent::ONDEMAND);
 
-  afferent->set_mode(cs4home_core::Afferent::CALLBACK,
+  afferent->set_mode(
+    cs4home_core::Afferent::CALLBACK,
     [&images](std::unique_ptr<rclcpp::SerializedMessage> msg) {
       images.push_back(std::move(msg));
     }
@@ -150,7 +151,7 @@ TEST(cognitive_module_test, efferent)
 
   std::vector<sensor_msgs::msg::Image> images;
   auto sub = sub_node->create_subscription<sensor_msgs::msg::Image>(
-    "/image", 100, [&images] (sensor_msgs::msg::Image msg) {
+    "/image", 100, [&images](sensor_msgs::msg::Image msg) {
       images.push_back(msg);
     });
 
@@ -196,7 +197,7 @@ TEST(cognitive_module_test, core)
 
   std::vector<sensor_msgs::msg::Image> images;
   auto sub = sub_node->create_subscription<sensor_msgs::msg::Image>(
-    "/out_image", 100, [&images] (sensor_msgs::msg::Image msg) {
+    "/out_image", 100, [&images](sensor_msgs::msg::Image msg) {
       images.push_back(msg);
     });
 
@@ -257,7 +258,7 @@ TEST(cognitive_module_test, core_cb)
 
   std::vector<sensor_msgs::msg::Image> images;
   auto sub = sub_node->create_subscription<sensor_msgs::msg::Image>(
-    "/out_image", 100, [&images] (sensor_msgs::msg::Image msg) {
+    "/out_image", 100, [&images](sensor_msgs::msg::Image msg) {
       images.push_back(msg);
     });
 
@@ -316,9 +317,9 @@ TEST(cognitive_module_test, startup_simple)
 
   rclcpp::NodeOptions options;
   options.arguments(
-    {"--ros-args", "-r", "__node:=cognitive_module_1", "--params-file", config_file});
+    {"--ros-args", "--params-file", config_file});
 
-  auto cm1 = cs4home_core::CognitiveModule::make_shared(options);
+  auto cm1 = cs4home_core::CognitiveModule::make_shared("cognitive_module_1", options);
   ASSERT_EQ(std::string(cm1->get_name()), "cognitive_module_1");
 
   auto params = cm1->list_parameters({}, 0);
@@ -331,7 +332,7 @@ TEST(cognitive_module_test, startup_simple)
 
   std::vector<sensor_msgs::msg::Image> images;
   auto sub = sub_node->create_subscription<sensor_msgs::msg::Image>(
-    "/detections", 100, [&images] (sensor_msgs::msg::Image msg) {
+    "/detections", 100, [&images](sensor_msgs::msg::Image msg) {
       images.push_back(msg);
     });
 
