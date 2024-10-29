@@ -33,10 +33,12 @@ class ImageFilter : public cs4home_core::Core
 public:
   RCLCPP_SMART_PTR_DEFINITIONS(ImageFilter)
 
+
   /**
    * @brief Constructs an ImageFilter object and initializes the parent lifecycle node.
    * @param parent Shared pointer to the lifecycle node managing this ImageFilter instance.
    */
+
   explicit ImageFilter(rclcpp_lifecycle::LifecycleNode::SharedPtr parent)
   : Core(parent)
   {

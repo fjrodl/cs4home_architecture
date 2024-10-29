@@ -43,11 +43,15 @@ public:
   RCLCPP_SMART_PTR_DEFINITIONS(CognitiveModule)
   using CallbackReturnT = rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn;
 
+
   /**
    * @brief Constructs a CognitiveModule with the specified node options.
    * @param options Node options for configuring the lifecycle node.
    */
-  explicit CognitiveModule(const rclcpp::NodeOptions & options = rclcpp::NodeOptions());
+  explicit CognitiveModule(
+    const std::string & name,
+    const rclcpp::NodeOptions & options = rclcpp::NodeOptions());
+
 
   /**
    * @brief Lifecycle transition callback for configuration.
