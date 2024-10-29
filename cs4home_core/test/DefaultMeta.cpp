@@ -47,7 +47,7 @@ public:
    * 
    * @return True if configuration is successful.
    */
-  bool configure() override
+  bool configure() 
   {
     RCLCPP_DEBUG(parent_->get_logger(), "Meta configured");
     return true;
