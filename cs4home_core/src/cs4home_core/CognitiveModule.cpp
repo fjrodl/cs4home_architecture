@@ -17,8 +17,11 @@
 namespace cs4home_core
 {
 
-CognitiveModule::CognitiveModule(const rclcpp::NodeOptions & options)
-: LifecycleNode("cognitive_module", options)
+CognitiveModule::CognitiveModule(
+  const std::string & name,
+  const rclcpp::NodeOptions & options)
+: LifecycleNode(name, options),
+  name_(name)
 {
   declare_parameter("core", core_name_);
   declare_parameter("afferent", afferent_name_);

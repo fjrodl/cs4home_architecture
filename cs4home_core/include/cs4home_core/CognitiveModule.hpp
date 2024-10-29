@@ -41,7 +41,9 @@ public:
   using CallbackReturnT =
     rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn;
 
-  explicit CognitiveModule(const rclcpp::NodeOptions & options = rclcpp::NodeOptions());
+  explicit CognitiveModule(
+    const std::string & name,
+    const rclcpp::NodeOptions & options = rclcpp::NodeOptions());
 
   CallbackReturnT on_configure(const rclcpp_lifecycle::State & state);
   CallbackReturnT on_activate(const rclcpp_lifecycle::State & state);
@@ -57,6 +59,7 @@ protected:
   Meta::SharedPtr meta_;
   Coupling::SharedPtr coupling_;
 
+  std::string name_;
   std::string core_name_;
   std::string afferent_name_;
   std::string efferent_name_;
