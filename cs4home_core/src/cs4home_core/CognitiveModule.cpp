@@ -48,8 +48,8 @@ CallbackReturnT CognitiveModule::on_configure(const rclcpp_lifecycle::State & st
 
   get_parameter("efferent", efferent_name_);
   std::string error_efferent;
-  std::tie(efferent_, error_efferent) = load_component<Efferent>(efferent_name_,
-    shared_from_this());
+  std::tie(efferent_, error_efferent) = load_component<Efferent>(
+    efferent_name_, shared_from_this());
   if (efferent_ == nullptr || !efferent_->configure()) {
     RCLCPP_ERROR(
       get_logger(), "Error configuring efferent at %s with name %s: %s",
@@ -59,8 +59,8 @@ CallbackReturnT CognitiveModule::on_configure(const rclcpp_lifecycle::State & st
 
   get_parameter("afferent", afferent_name_);
   std::string error_afferent;
-  std::tie(afferent_, error_afferent) = load_component<Afferent>(afferent_name_,
-    shared_from_this());
+  std::tie(afferent_, error_afferent) = load_component<Afferent>(
+    afferent_name_, shared_from_this());
   if (afferent_ == nullptr || !afferent_->configure()) {
     RCLCPP_ERROR(
       get_logger(), "Error configuring afferent at %s with name %s: %s",
@@ -83,8 +83,8 @@ CallbackReturnT CognitiveModule::on_configure(const rclcpp_lifecycle::State & st
 
   get_parameter("coupling", coupling_name_);
   std::string error_coupling;
-  std::tie(coupling_, error_coupling) = load_component<Coupling>(coupling_name_,
-    shared_from_this());
+  std::tie(coupling_, error_coupling) = load_component<Coupling>(
+    coupling_name_, shared_from_this());
   if (coupling_ == nullptr || !coupling_->configure()) {
     RCLCPP_ERROR(
       get_logger(), "Error configuring efferent at %s with name %s: %s",

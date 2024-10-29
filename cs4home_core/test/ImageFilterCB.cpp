@@ -29,7 +29,7 @@ class ImageFilterCB : public cs4home_core::Core
 public:
   RCLCPP_SMART_PTR_DEFINITIONS(ImageFilterCB)
 
-  explicit  ImageFilterCB(rclcpp_lifecycle::LifecycleNode::SharedPtr parent)
+  explicit ImageFilterCB(rclcpp_lifecycle::LifecycleNode::SharedPtr parent)
   : Core(parent)
   {
     RCLCPP_DEBUG(parent_->get_logger(), "Core created: [ImageFilterCB]");
