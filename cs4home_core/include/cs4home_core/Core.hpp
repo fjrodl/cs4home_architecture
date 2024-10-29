@@ -73,9 +73,12 @@ public:
   void set_efferent(cs4home_core::Efferent::SharedPtr efferent) {efferent_ = efferent;}
 
 protected:
-  rclcpp_lifecycle::LifecycleNode::SharedPtr parent_; /**< Shared pointer to the parent lifecycle node. */
-  cs4home_core::Afferent::SharedPtr afferent_; /**< Shared pointer to the Afferent component. */
-  cs4home_core::Efferent::SharedPtr efferent_; /**< Shared pointer to the Efferent component. */
+  /** Shared pointer to the parent lifecycle node. */
+  rclcpp_lifecycle::LifecycleNode::SharedPtr parent_; 
+  /** Shared pointer to the Afferent component. */
+  cs4home_core::Afferent::SharedPtr afferent_; 
+  /** Shared pointer to the Efferent component. */
+  cs4home_core::Efferent::SharedPtr efferent_; 
 };
 
 }  // namespace cs4home_core

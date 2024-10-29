@@ -87,7 +87,8 @@ public:
   CallbackReturnT on_error(const rclcpp_lifecycle::State & state);
 
 protected:
-  std::map<std::string, cs4home_core::CognitiveModule::SharedPtr> cog_modules_; /**< Map of cognitive modules managed by the Master node. */
+  /** Map of cognitive modules managed by the Master node. */
+  std::map<std::string, cs4home_core::CognitiveModule::SharedPtr> cog_modules_; 
 };
 
 }  // namespace cs4home_core

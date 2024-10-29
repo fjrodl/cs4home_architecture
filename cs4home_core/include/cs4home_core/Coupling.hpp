@@ -23,7 +23,8 @@ namespace cs4home_core
 
 /**
  * @class Coupling
- * @brief Manages coupling operations within a robotic system, providing lifecycle-aware configuration.
+ * @brief Manages coupling operations within a robotic system, 
+ *      providing lifecycle-aware configuration.
  */
 class Coupling
 {
@@ -43,7 +44,8 @@ public:
   bool configure();
 
 protected:
-  rclcpp_lifecycle::LifecycleNode::SharedPtr parent_; /**< Shared pointer to the parent lifecycle node. */
+  /**< Shared pointer to the parent lifecycle node. */
+  rclcpp_lifecycle::LifecycleNode::SharedPtr parent_; 
 };
 
 }  // namespace cs4home_core

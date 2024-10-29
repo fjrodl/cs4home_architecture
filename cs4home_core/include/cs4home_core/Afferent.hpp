@@ -120,16 +120,22 @@ public:
   }
 
 protected:
-  rclcpp_lifecycle::LifecycleNode::SharedPtr parent_; /**< Shared pointer to the parent node. */
-  std::vector<std::shared_ptr<rclcpp::GenericSubscription>> subs_; /**< List of subscriptions. */
+  /** Shared pointer to the parent node. */
+  rclcpp_lifecycle::LifecycleNode::SharedPtr parent_; 
+  /** List of subscriptions. */
+  std::vector<std::shared_ptr<rclcpp::GenericSubscription>> subs_; 
 
   EfferentProcessMode mode_ {ONDEMAND}; /**< Current processing mode. */
 
-  const size_t MAX_DEFAULT_QUEUE_SIZE = 100; /**< Default maximum queue size. */
-  size_t max_queue_size_ {MAX_DEFAULT_QUEUE_SIZE}; /**< Maximum queue size. */
-  std::queue<std::unique_ptr<rclcpp::SerializedMessage>> msg_queue_; /**< Queue for serialized messages. */
+  /** Default maximum queue size. */
+  const size_t MAX_DEFAULT_QUEUE_SIZE = 100;
+  /** Maximum queue size. */
+  size_t max_queue_size_ {MAX_DEFAULT_QUEUE_SIZE};
+  /** Queue for serialized messages. */
+  std::queue<std::unique_ptr<rclcpp::SerializedMessage>> msg_queue_;
 
-  std::function<void(std::unique_ptr<rclcpp::SerializedMessage>)> callback_; /**< Callback for serialized messages. */
+  /** Callback for serialized messages. */
+  std::function<void(std::unique_ptr<rclcpp::SerializedMessage>)> callback_; 
 
 
   /**

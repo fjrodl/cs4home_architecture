@@ -78,7 +78,8 @@ public:
   }
 
 private:
-  std::vector<std::string> input_topic_names_; /**< List of input topics to subscribe to for images. */
+  /**< List of input topics to subscribe to for images. */
+  std::vector<std::string> input_topic_names_; 
 };
 
 /// Registers the SimpleImageInput component with the ROS 2 class loader

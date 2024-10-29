@@ -70,8 +70,10 @@ public:
   }
 
 protected:
-  rclcpp_lifecycle::LifecycleNode::SharedPtr parent_; /**< Shared pointer to the parent lifecycle node. */
-  std::vector<std::shared_ptr<rclcpp::GenericPublisher>> pubs_; /**< List of generic publishers. */
+   /**< Shared pointer to the parent lifecycle node. */
+  rclcpp_lifecycle::LifecycleNode::SharedPtr parent_;
+   /**< List of generic publishers. */
+  std::vector<std::shared_ptr<rclcpp::GenericPublisher>> pubs_;
 
   /**
    * @brief Creates a publisher for a specified topic and message type.
