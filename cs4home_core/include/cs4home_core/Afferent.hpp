@@ -25,6 +25,8 @@
 #include "rclcpp_lifecycle/lifecycle_node.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp/macros.hpp"
+#include "rclcpp/serialization.hpp"
+#include "rclcpp/create_generic_subscription.hpp"
 
 namespace cs4home_core
 {
@@ -59,7 +61,7 @@ public:
 
   /**
    * @brief Sets the processing mode and an optional callback function.
-   * 
+   *
    * @param mode Processing mode for handling messages.
    * @param cb Optional callback function for handling serialized messages in CALLBACK mode.
    */
@@ -86,12 +88,12 @@ public:
    */
   size_t get_max_queue_size() {return max_queue_size_;}
 
-   /**
-   * @brief Converts a serialized message to a typed message.
-   * @tparam MessageT Type of the message to deserialize.
-   * @param msg Serialized message to convert.
-   * @return A unique pointer to the deserialized message.
-   */
+  /**
+  * @brief Converts a serialized message to a typed message.
+  * @tparam MessageT Type of the message to deserialize.
+  * @param msg Serialized message to convert.
+  * @return A unique pointer to the deserialized message.
+  */
   template<class MessageT> std::unique_ptr<MessageT> get_msg(
     std::unique_ptr<rclcpp::SerializedMessage> msg)
   {
@@ -121,9 +123,9 @@ public:
 
 protected:
   /** Shared pointer to the parent node. */
-  rclcpp_lifecycle::LifecycleNode::SharedPtr parent_; 
+  rclcpp_lifecycle::LifecycleNode::SharedPtr parent_;
   /** List of subscriptions. */
-  std::vector<std::shared_ptr<rclcpp::GenericSubscription>> subs_; 
+  std::vector<std::shared_ptr<rclcpp::GenericSubscription>> subs_;
 
   EfferentProcessMode mode_ {ONDEMAND}; /**< Current processing mode. */
 
@@ -135,7 +137,7 @@ protected:
   std::queue<std::unique_ptr<rclcpp::SerializedMessage>> msg_queue_;
 
   /** Callback for serialized messages. */
-  std::function<void(std::unique_ptr<rclcpp::SerializedMessage>)> callback_; 
+  std::function<void(std::unique_ptr<rclcpp::SerializedMessage>)> callback_;
 
 
   /**

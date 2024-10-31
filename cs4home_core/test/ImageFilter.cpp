@@ -47,10 +47,10 @@ public:
 
   /**
    * @brief Processes an incoming image message by modifying its header.
-   * 
+   *
    * The `frame_id` in the image header is converted to an integer, doubled, and set as the new
    * `frame_id`. The modified message is then sent to the efferent component.
-   * 
+   *
    * @param msg Unique pointer to the incoming image message of type `sensor_msgs::msg::Image`.
    */
   void process_in_image(sensor_msgs::msg::Image::UniquePtr msg)
@@ -64,7 +64,7 @@ public:
 
   /**
    * @brief Timer callback function that retrieves an image message and processes it.
-   * 
+   *
    * This function is called periodically and attempts to retrieve an image message from the
    * afferent component. If a message is received, it is passed to `process_in_image`.
    */
@@ -88,9 +88,9 @@ public:
 
   /**
    * @brief Activates the ImageFilter component by initializing a timer.
-   * 
+   *
    * The timer is set to call `timer_callback` every 50 milliseconds.
-   * 
+   *
    * @return True if activation is successful.
    */
   bool activate() override
@@ -102,9 +102,9 @@ public:
 
   /**
    * @brief Deactivates the ImageFilter component by disabling the timer.
-   * 
+   *
    * The timer is reset to null, stopping periodic message processing.
-   * 
+   *
    * @return True if deactivation is successful.
    */
   bool deactivate() override

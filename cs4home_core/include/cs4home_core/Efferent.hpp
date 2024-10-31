@@ -21,6 +21,7 @@
 
 #include "rclcpp_lifecycle/lifecycle_node.hpp"
 #include "rclcpp/macros.hpp"
+#include "rclcpp/serialization.hpp"
 
 namespace cs4home_core
 {
@@ -49,10 +50,10 @@ public:
 
   /**
    * @brief Publishes a serialized message to all configured publishers.
-   * 
+   *
    * This templated method serializes the provided message and broadcasts it to
    * each publisher in the `pubs_` list.
-   * 
+   *
    * @tparam MessageT Type of the message to publish.
    * @param msg Unique pointer to the message to broadcast.
    */
@@ -70,9 +71,9 @@ public:
   }
 
 protected:
-   /**< Shared pointer to the parent lifecycle node. */
+  /**< Shared pointer to the parent lifecycle node. */
   rclcpp_lifecycle::LifecycleNode::SharedPtr parent_;
-   /**< List of generic publishers. */
+  /**< List of generic publishers. */
   std::vector<std::shared_ptr<rclcpp::GenericPublisher>> pubs_;
 
   /**

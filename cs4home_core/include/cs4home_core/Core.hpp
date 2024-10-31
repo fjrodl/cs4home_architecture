@@ -28,7 +28,7 @@ namespace cs4home_core
 
 /**
  * @class Core
- * @brief Manages core functionality for a robotic component, including lifecycle transitions 
+ * @brief Manages core functionality for a robotic component, including lifecycle transitions
  *        and connections to afferent and efferent processing components.
  */
 class Core
@@ -74,11 +74,11 @@ public:
 
 protected:
   /** Shared pointer to the parent lifecycle node. */
-  rclcpp_lifecycle::LifecycleNode::SharedPtr parent_; 
+  rclcpp_lifecycle::LifecycleNode::SharedPtr parent_;
   /** Shared pointer to the Afferent component. */
-  cs4home_core::Afferent::SharedPtr afferent_; 
+  cs4home_core::Afferent::SharedPtr afferent_;
   /** Shared pointer to the Efferent component. */
-  cs4home_core::Efferent::SharedPtr efferent_; 
+  cs4home_core::Efferent::SharedPtr efferent_;
 };
 
 }  // namespace cs4home_core

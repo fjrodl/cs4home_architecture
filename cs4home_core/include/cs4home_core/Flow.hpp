@@ -64,4 +64,4 @@ private:
 // #include "rclcpp_components/register_node_macro.hpp"
 //
 // // Register the component with class_loader.
-// // This acts as a sort of entry point, 
+// // This acts as a sort of entry point,

@@ -20,7 +20,7 @@
 
 /**
  * @brief Unit test for verifying the creation and structure of Flow instances.
- * 
+ *
  * This test checks that `Flow` instances are created correctly with the expected
  * sequence of nodes, ensuring that the get_nodes() function returns the correct
  * vector of node names.
@@ -38,9 +38,9 @@ TEST(flow_test, flow_creation)
 
 /**
  * @brief Main function for running all GoogleTest unit tests.
- * 
+ *
  * Initializes GoogleTest and ROS 2, then runs all tests defined in the executable.
- * 
+ *
  * @param argc Argument count
  * @param argv Argument vector
  * @return int Test run result (0 if all tests passed, non-zero otherwise)

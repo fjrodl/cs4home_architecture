@@ -28,10 +28,10 @@ Efferent::Efferent(rclcpp_lifecycle::LifecycleNode::SharedPtr parent)
 
 /**
  * @brief Creates a publisher for a specified topic and message type.
- * 
+ *
  * This function sets up a generic publisher on a given topic, allowing the
  * Efferent component to send messages of the specified type.
- * 
+ *
  * @param topic The topic name to publish messages to.
  * @param type The type of messages to publish on the topic.
  * @return True if the publisher was created successfully.

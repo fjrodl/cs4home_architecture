@@ -179,9 +179,9 @@ CallbackReturnT CognitiveModule::on_error(const rclcpp_lifecycle::State & state)
 
 /**
  * @brief Loads a component dynamically by name.
- * 
+ *
  * Attempts to load the specified component by name from a shared library.
- * 
+ *
  * @tparam T Type of the component to load.
  * @param name Name of the component.
  * @param parent Shared pointer to the parent lifecycle node.

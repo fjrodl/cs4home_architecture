@@ -26,10 +26,10 @@ namespace cs4home_core
  * @def CS_REGISTER_COMPONENT(class_name)
  * @brief Macro to define a factory function for creating a shared pointer instance
  *        of a component class within the lifecycle node context.
- * 
+ *
  * This macro generates an `extern "C"` factory function named `create_instance` that
  * returns a shared pointer to the specified class, allowing dynamic component loading.
- * 
+ *
  * @param class_name The name of the class to register as a component.
  */
 #define CS_REGISTER_COMPONENT(class_name) \

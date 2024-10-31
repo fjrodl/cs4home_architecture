@@ -88,7 +88,7 @@ public:
 
 protected:
   /** Map of cognitive modules managed by the Master node. */
-  std::map<std::string, cs4home_core::CognitiveModule::SharedPtr> cog_modules_; 
+  std::map<std::string, cs4home_core::CognitiveModule::SharedPtr> cog_modules_;
 };
 
 }  // namespace cs4home_core

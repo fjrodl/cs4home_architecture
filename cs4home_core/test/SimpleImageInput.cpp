@@ -45,10 +45,10 @@ public:
 
   /**
    * @brief Configures the SimpleImageInput by creating subscribers for each specified topic.
-   * 
+   *
    * This method retrieves the topic names from the parameter server and attempts to create
    * a subscription for each topic to receive `sensor_msgs::msg::Image` messages.
-   * 
+   *
    * @return True if all subscriptions are created successfully.
    */
   bool configure() override
@@ -79,7 +79,7 @@ public:
 
 private:
   /**< List of input topics to subscribe to for images. */
-  std::vector<std::string> input_topic_names_; 
+  std::vector<std::string> input_topic_names_;
 };
 
 /// Registers the SimpleImageInput component with the ROS 2 class loader

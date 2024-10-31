@@ -21,8 +21,8 @@
 /**
  * @class DefaultMeta
  * @brief A Meta component that provides default configurations for meta-level operations.
- * 
- * This class extends the Meta component, initializing with a basic configuration. 
+ *
+ * This class extends the Meta component, initializing with a basic configuration.
  * It is intended for meta-level tasks that require minimal setup.
  */
 class DefaultMeta : public cs4home_core::Meta
@@ -42,9 +42,9 @@ public:
 
   /**
    * @brief Configures the DefaultMeta component.
-   * 
+   *
    * Logs the configuration step and prepares the component for operation.
-   * 
+   *
    * @return True if configuration is successful.
    */
   bool configure()

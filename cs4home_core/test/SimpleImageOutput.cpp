@@ -45,10 +45,10 @@ public:
 
   /**
    * @brief Configures the SimpleImageOutput by creating publishers for each specified topic.
-   * 
+   *
    * This method retrieves the topic names from the parameter server and attempts to create
    * a publisher for each topic to publish `sensor_msgs::msg::Image` messages.
-   * 
+   *
    * @return True if all publishers are created successfully.
    */
   bool configure()

@@ -21,8 +21,8 @@
 /**
  * @class DefaultCoupling
  * @brief A Coupling component that provides default configuration for coupling-related tasks.
- * 
- * This class extends the Coupling component, initializing with basic configuration. 
+ *
+ * This class extends the Coupling component, initializing with basic configuration.
  * It is intended for tasks involving the coordination and interaction of functional components.
  */
 class DefaultCoupling : public cs4home_core::Coupling
@@ -42,9 +42,9 @@ public:
 
   /**
    * @brief Configures the DefaultCoupling component.
-   * 
+   *
    * Logs the configuration step and prepares the component for operation.
-   * 
+   *
    * @return True if configuration is successful.
    */
   bool configure()

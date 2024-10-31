@@ -46,10 +46,10 @@ public:
   /**
    * @brief Processes incoming serialized image messages, applies a simple transformation, and
    *        republishes them.
-   * 
+   *
    * The `frame_id` in the image header is converted to an integer, doubled, and set as the new
    * `frame_id`. The modified message is then sent to the efferent component.
-   * 
+   *
    * @param msg Unique pointer to the serialized incoming image message.
    */
   void process_in_image(std::unique_ptr<rclcpp::SerializedMessage> msg)
@@ -65,10 +65,10 @@ public:
 
   /**
    * @brief Configures the ImageFilterCB component.
-   * 
+   *
    * Sets the afferent component mode to `CALLBACK`, binding the `process_in_image` method to
    * handle incoming messages.
-   * 
+   *
    * @return True if configuration is successful.
    */
   bool configure() override
@@ -92,9 +92,9 @@ public:
 
   /**
    * @brief Deactivates the ImageFilterCB component.
-   * 
+   *
    * Disables the internal timer by resetting the timer shared pointer to null.
-   * 
+   *
    * @return True if deactivation is successful.
    */
   bool deactivate() override

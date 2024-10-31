@@ -54,10 +54,10 @@ using namespace std::chrono_literals;
 
 /**
  * @test Verifies the functionality of the afferent component in "on demand" mode.
- * 
+ *
  * This test sets up an afferent component to operate in "on demand" mode, where it
  * retrieves messages from a queue rather than processing them immediately via a callback.
- * Messages are published to a topic, and the afferent component is configured to pull 
+ * Messages are published to a topic, and the afferent component is configured to pull
  * messages from this queue as needed. The test ensures that the messages are correctly
  * retrieved in order and that once the queue is empty, further retrievals return `nullptr`.
  */
@@ -114,10 +114,10 @@ TEST(cognitive_module_test, afferent_on_demand)
 
 /**
  * @test Verifies the functionality of the afferent component in callback mode.
- * 
+ *
  * This test sets up an afferent component to operate in callback mode, where it
  * subscribes to a topic and processes incoming messages by storing them in a vector
- * for verification. The component listens to `/image` messages and ensures that all 
+ * for verification. The component listens to `/image` messages and ensures that all
  * received messages are processed and accessible through the callback mechanism.
  */
 TEST(cognitive_module_test, afferent_on_subscription)
@@ -184,11 +184,11 @@ TEST(cognitive_module_test, afferent_on_subscription)
 }
 /**
  * @test Verifies the functionality of the efferent component in publishing messages.
- * 
+ *
  * This test sets up an efferent component to publish messages on a specified topic.
  * It publishes a series of messages with sequential `frame_id` values and verifies
  * that these messages are received correctly by a subscriber on the same topic.
- * The test ensures that the efferent component is able to correctly configure its 
+ * The test ensures that the efferent component is able to correctly configure its
  * publishers and transmit messages to external listeners.
  */
 TEST(cognitive_module_test, efferent)
@@ -243,12 +243,11 @@ TEST(cognitive_module_test, efferent)
 }
 
 
-
 /**
  * @test Verifies the core component's behavior when processing incoming messages.
- * 
+ *
  * This test sets up an afferent component to receive messages, a core component
- * to process them by doubling the `frame_id` in each message header, and an 
+ * to process them by doubling the `frame_id` in each message header, and an
  * efferent component to republish the processed messages. The test publishes a
  * series of messages, each with a sequential `frame_id`, and verifies that the
  * processed messages in the efferent component have doubled `frame_id` values.
@@ -323,11 +322,11 @@ TEST(cognitive_module_test, core)
 /**
  * @test Verifies the core component with callback functionality (core_cb) processes incoming
  * messages and republishes them with doubled `frame_id` values.
- * 
- * This test sets up an afferent component in callback mode to receive messages, a core 
+ *
+ * This test sets up an afferent component in callback mode to receive messages, a core
  * component with a callback (`core_cb`) to process the messages by doubling the `frame_id`
- * in each message header, and an efferent component to republish the processed messages. 
- * The test publishes a sequence of messages and verifies that the processed messages have 
+ * in each message header, and an efferent component to republish the processed messages.
+ * The test publishes a sequence of messages and verifies that the processed messages have
  * doubled `frame_id` values.
  */
 TEST(cognitive_module_test, core_cb)
@@ -400,10 +399,10 @@ TEST(cognitive_module_test, core_cb)
 
 /**
  * @test Tests the initialization and basic functionality of the CognitiveModule using a configuration file.
- * 
+ *
  * This test verifies that the CognitiveModule initializes correctly from a configuration file
- * and transitions through the ROS 2 lifecycle states (configure, activate, deactivate). 
- * It sets up publishers and subscribers to check that messages are processed with expected modifications 
+ * and transitions through the ROS 2 lifecycle states (configure, activate, deactivate).
+ * It sets up publishers and subscribers to check that messages are processed with expected modifications
  * (doubling of `frame_id`) and are received correctly after processing.
  */
 TEST(cognitive_module_test, startup_simple)
