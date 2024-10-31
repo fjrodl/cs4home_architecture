@@ -45,7 +45,7 @@ public:
 
 protected:
   /// < Shared pointer to the parent lifecycle node.
-  rclcpp_lifecycle::LifecycleNode::SharedPtr parent_; 
+  rclcpp_lifecycle::LifecycleNode::SharedPtr parent_;
 };
 
 }  // namespace cs4home_core
