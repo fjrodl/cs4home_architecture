@@ -44,7 +44,8 @@ public:
   bool configure();
 
 protected:
-  rclcpp_lifecycle::LifecycleNode::SharedPtr parent_; /**< Shared pointer to the parent lifecycle node. */
+  /// < Shared pointer to the parent lifecycle node.
+  rclcpp_lifecycle::LifecycleNode::SharedPtr parent_; 
 };
 
 }  // namespace cs4home_core
