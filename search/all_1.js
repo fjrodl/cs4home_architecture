@@ -2,7 +2,7 @@ var searchData=
 [
   ['callback_0',['CALLBACK',['../classcs4home__core_1_1Afferent.html#ac726900539dfc6093714509f8143952fa947008c1ec19258f09d81743dd3c5f9a',1,'cs4home_core::Afferent']]],
   ['callback_5f_1',['callback_',['../classcs4home__core_1_1Afferent.html#a4a017dd6a60a7605c1d59d4b1f2ba6e3',1,'cs4home_core::Afferent']]],
-  ['callbackreturnt_2',['CallbackReturnT',['../classcs4home__core_1_1CognitiveModule.html#ad09d90f1fe35c9e2f2fd7fc1902312f4',1,'cs4home_core::CognitiveModule::CallbackReturnT'],['../classcs4home__core_1_1Master.html#ad09d90f1fe35c9e2f2fd7fc1902312f4',1,'cs4home_core::Master::CallbackReturnT'],['../namespacecs4home__core.html#a80be92d68b8b37b3cbd2cf67c9289d3f',1,'cs4home_core::CallbackReturnT']]],
+  ['callbackreturnt_2',['CallbackReturnT',['../classcs4home__core_1_1CognitiveModule.html#ad09d90f1fe35c9e2f2fd7fc1902312f4',1,'cs4home_core::CognitiveModule::CallbackReturnT'],['../classcs4home__core_1_1Master.html#ad09d90f1fe35c9e2f2fd7fc1902312f4',1,'cs4home_core::Master::CallbackReturnT'],['../namespacecs4home__core.html#ad09d90f1fe35c9e2f2fd7fc1902312f4',1,'cs4home_core::CallbackReturnT']]],
   ['cog_5fmodules_5f_3',['cog_modules_',['../classcs4home__core_1_1Master.html#a34c68613b5acf7af83109897f5686028',1,'cs4home_core::Master']]],
   ['cognitive_5fmodule_5ftest_2ecpp_4',['cognitive_module_test.cpp',['../cognitive__module__test_8cpp.html',1,'']]],
   ['cognitivemodule_5',['CognitiveModule',['../classcs4home__core_1_1CognitiveModule.html',1,'CognitiveModule'],['../classcs4home__core_1_1CognitiveModule.html#afcabcb7d839a433f8714e99b260eb9cc',1,'cs4home_core::CognitiveModule::CognitiveModule()']]],
