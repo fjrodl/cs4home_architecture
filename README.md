@@ -14,6 +14,10 @@ This structure addresses traditional challenges in robotics, such as hardware-bu
 
 This model is designed as an adaptable solution for a wide variety of robotic systems based on ROS 2, from low-level controls to complex inter-robot coordination and communication. This adaptability allows the scaling and distribution of components across diverse architectures, facilitating the incorporation of new functionalities without the need for redesign.
 
+## Documentation
+
+* Doxygen:[https://coresenseeu.github.io/cs4home_architecture/](https://coresenseeu.github.io/cs4home_architecture/)
+* General documentation: [https://coresenseeu.github.io/](https://coresenseeu.github.io/)
 
 ## Examples
 
