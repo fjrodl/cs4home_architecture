@@ -236,6 +236,24 @@ template&lt;class T&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Tuple with the loaded component shared pointer and error message. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="cognitive__module__test_8cpp_ae0c2604bedba9f7c5c9fc3b5e017e8ba_icgraph.png" border="0" usemap="#acognitive__module__test_8cpp_ae0c2604bedba9f7c5c9fc3b5e017e8ba_icgraph" alt=""/></div>
+<map name="acognitive__module__test_8cpp_ae0c2604bedba9f7c5c9fc3b5e017e8ba_icgraph" id="acognitive__module__test_8cpp_ae0c2604bedba9f7c5c9fc3b5e017e8ba_icgraph">
+<area shape="rect" title="Loads a ROS 2 component dynamically." alt="" coords="108,104,224,130"/>
+<area shape="rect" href="cognitive__module__test_8cpp.html#a91dccc85e6d55e22cfad72e516af7ec5" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="133,97,50,34,53,29,137,92"/>
+<area shape="rect" href="cognitive__module__test_8cpp.html#a4092fb7799b0ef7bd5fa861e53904a36" title=" " alt="" coords="5,55,60,80"/>
+<area shape="poly" title=" " alt="" coords="114,101,59,80,61,75,116,96"/>
+<area shape="rect" href="cognitive__module__test_8cpp.html#a06368dda46db7573c8e6737815468e4f" title=" " alt="" coords="5,104,60,130"/>
+<area shape="poly" title=" " alt="" coords="92,120,60,120,60,114,92,114"/>
+<area shape="rect" href="cognitive__module__test_8cpp.html#a3f957425afcdfee04c6a8039ff7fc8f7" title=" " alt="" coords="5,153,60,179"/>
+<area shape="poly" title=" " alt="" coords="116,138,61,159,59,154,114,133"/>
+<area shape="rect" href="cognitive__module__test_8cpp.html#a471ac84bb32a3c56238f1b0de7c451b6" title=" " alt="" coords="5,203,60,228"/>
+<area shape="poly" title=" " alt="" coords="137,141,53,204,50,200,133,137"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -280,6 +298,16 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 <dl class="test"><dt><b><a class="el" href="test.html#_test000001">Test</a></b></dt><dd>Verifies the functionality of the afferent component in "on demand" mode.</dd></dl>
 <p>This test sets up an afferent component to operate in "on demand" mode, where it retrieves messages from a queue rather than processing them immediately via a callback. Messages are published to a topic, and the afferent component is configured to pull messages from this queue as needed. The test ensures that the messages are correctly retrieved in order and that once the queue is empty, further retrievals return <code>nullptr</code>. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="cognitive__module__test_8cpp_a91dccc85e6d55e22cfad72e516af7ec5_cgraph.png" border="0" usemap="#acognitive__module__test_8cpp_a91dccc85e6d55e22cfad72e516af7ec5_cgraph" alt=""/></div>
+<map name="acognitive__module__test_8cpp_a91dccc85e6d55e22cfad72e516af7ec5_cgraph" id="acognitive__module__test_8cpp_a91dccc85e6d55e22cfad72e516af7ec5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="cognitive__module__test_8cpp.html#ae0c2604bedba9f7c5c9fc3b5e017e8ba" title="Loads a ROS 2 component dynamically." alt="" coords="108,5,224,31"/>
+<area shape="poly" title=" " alt="" coords="60,16,92,16,92,21,60,21"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -303,6 +331,16 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 <dl class="test"><dt><b><a class="el" href="test.html#_test000002">Test</a></b></dt><dd>Verifies the functionality of the afferent component in callback mode.</dd></dl>
 <p>This test sets up an afferent component to operate in callback mode, where it subscribes to a topic and processes incoming messages by storing them in a vector for verification. The component listens to <code>/image</code> messages and ensures that all received messages are processed and accessible through the callback mechanism. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="cognitive__module__test_8cpp_a4092fb7799b0ef7bd5fa861e53904a36_cgraph.png" border="0" usemap="#acognitive__module__test_8cpp_a4092fb7799b0ef7bd5fa861e53904a36_cgraph" alt=""/></div>
+<map name="acognitive__module__test_8cpp_a4092fb7799b0ef7bd5fa861e53904a36_cgraph" id="acognitive__module__test_8cpp_a4092fb7799b0ef7bd5fa861e53904a36_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="cognitive__module__test_8cpp.html#ae0c2604bedba9f7c5c9fc3b5e017e8ba" title="Loads a ROS 2 component dynamically." alt="" coords="108,5,224,31"/>
+<area shape="poly" title=" " alt="" coords="60,16,92,16,92,21,60,21"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -326,6 +364,16 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 <dl class="test"><dt><b><a class="el" href="test.html#_test000004">Test</a></b></dt><dd>Verifies the core component's behavior when processing incoming messages.</dd></dl>
 <p>This test sets up an afferent component to receive messages, a core component to process them by doubling the <code>frame_id</code> in each message header, and an efferent component to republish the processed messages. The test publishes a series of messages, each with a sequential <code>frame_id</code>, and verifies that the processed messages in the efferent component have doubled <code>frame_id</code> values. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="cognitive__module__test_8cpp_a06368dda46db7573c8e6737815468e4f_cgraph.png" border="0" usemap="#acognitive__module__test_8cpp_a06368dda46db7573c8e6737815468e4f_cgraph" alt=""/></div>
+<map name="acognitive__module__test_8cpp_a06368dda46db7573c8e6737815468e4f_cgraph" id="acognitive__module__test_8cpp_a06368dda46db7573c8e6737815468e4f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="cognitive__module__test_8cpp.html#ae0c2604bedba9f7c5c9fc3b5e017e8ba" title="Loads a ROS 2 component dynamically." alt="" coords="108,5,224,31"/>
+<area shape="poly" title=" " alt="" coords="60,16,92,16,92,21,60,21"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -349,6 +397,16 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 <dl class="test"><dt><b><a class="el" href="test.html#_test000005">Test</a></b></dt><dd>Verifies the core component with callback functionality (core_cb) processes incoming messages and republishes them with doubled <code>frame_id</code> values.</dd></dl>
 <p>This test sets up an afferent component in callback mode to receive messages, a core component with a callback (<code>core_cb</code>) to process the messages by doubling the <code>frame_id</code> in each message header, and an efferent component to republish the processed messages. The test publishes a sequence of messages and verifies that the processed messages have doubled <code>frame_id</code> values. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="cognitive__module__test_8cpp_a3f957425afcdfee04c6a8039ff7fc8f7_cgraph.png" border="0" usemap="#acognitive__module__test_8cpp_a3f957425afcdfee04c6a8039ff7fc8f7_cgraph" alt=""/></div>
+<map name="acognitive__module__test_8cpp_a3f957425afcdfee04c6a8039ff7fc8f7_cgraph" id="acognitive__module__test_8cpp_a3f957425afcdfee04c6a8039ff7fc8f7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="cognitive__module__test_8cpp.html#ae0c2604bedba9f7c5c9fc3b5e017e8ba" title="Loads a ROS 2 component dynamically." alt="" coords="108,5,224,31"/>
+<area shape="poly" title=" " alt="" coords="60,16,92,16,92,21,60,21"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -372,6 +430,16 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 <dl class="test"><dt><b><a class="el" href="test.html#_test000003">Test</a></b></dt><dd>Verifies the functionality of the efferent component in publishing messages.</dd></dl>
 <p>This test sets up an efferent component to publish messages on a specified topic. It publishes a series of messages with sequential <code>frame_id</code> values and verifies that these messages are received correctly by a subscriber on the same topic. The test ensures that the efferent component is able to correctly configure its publishers and transmit messages to external listeners. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="cognitive__module__test_8cpp_a471ac84bb32a3c56238f1b0de7c451b6_cgraph.png" border="0" usemap="#acognitive__module__test_8cpp_a471ac84bb32a3c56238f1b0de7c451b6_cgraph" alt=""/></div>
+<map name="acognitive__module__test_8cpp_a471ac84bb32a3c56238f1b0de7c451b6_cgraph" id="acognitive__module__test_8cpp_a471ac84bb32a3c56238f1b0de7c451b6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,60,31"/>
+<area shape="rect" href="cognitive__module__test_8cpp.html#ae0c2604bedba9f7c5c9fc3b5e017e8ba" title="Loads a ROS 2 component dynamically." alt="" coords="108,5,224,31"/>
+<area shape="poly" title=" " alt="" coords="60,16,92,16,92,21,60,21"/>
+</map>
+</div>
 
 </div>
 </div>

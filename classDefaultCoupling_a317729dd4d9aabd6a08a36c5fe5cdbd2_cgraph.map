@@ -1,0 +1,6 @@
+<map id="DefaultCoupling" name="DefaultCoupling">
+<area shape="rect" id="Node000001" title="Constructs a DefaultCoupling object and initializes the parent lifecycle node." alt="" coords="5,29,118,55"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="30,30,24,21,28,11,41,5,62,3,84,5,96,12,93,16,82,10,61,8,42,10,32,15,30,20,35,27"/>
+<area shape="rect" id="Node000002" href="$classcs4home__core_1_1Coupling.html#a271ff66392f062ee7d3f2de85dc4fe32" title="Constructs a Coupling object associated with a parent lifecycle node." alt="" coords="166,22,328,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,40,150,40,150,45,118,45"/>
+</map>

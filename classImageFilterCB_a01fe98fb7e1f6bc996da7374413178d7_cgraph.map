@@ -1,0 +1,5 @@
+<map id="configure" name="configure">
+<area shape="rect" id="Node000001" title="Configures the ImageFilterCB component." alt="" coords="5,5,79,31"/>
+<area shape="rect" id="Node000002" href="$classImageFilterCB.html#a89c1952582e3b6a94411650a69c800a4" title="Processes incoming serialized image messages, applies a simple transformation, and republishes them." alt="" coords="127,5,253,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,16,111,16,111,21,79,21"/>
+</map>

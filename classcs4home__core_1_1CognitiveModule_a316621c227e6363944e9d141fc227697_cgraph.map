@@ -1,0 +1,5 @@
+<map id="on_configure" name="on_configure">
+<area shape="rect" id="Node000001" title="Lifecycle transition callback for configuration." alt="" coords="5,5,100,31"/>
+<area shape="rect" id="Node000002" href="$classcs4home__core_1_1CognitiveModule.html#ae0c2604bedba9f7c5c9fc3b5e017e8ba" title="Loads a specified component by name and returns a shared pointer to it." alt="" coords="148,5,264,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,16,132,16,132,21,100,21"/>
+</map>

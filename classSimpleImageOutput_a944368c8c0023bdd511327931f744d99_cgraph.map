@@ -1,0 +1,6 @@
+<map id="SimpleImageOutput" name="SimpleImageOutput">
+<area shape="rect" id="Node000001" title="Constructs a SimpleImageOutput object and declares necessary parameters." alt="" coords="5,29,142,55"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="41,30,35,21,38,11,52,5,74,3,97,5,110,12,107,17,96,10,73,8,53,10,42,15,40,20,45,27"/>
+<area shape="rect" id="Node000002" href="$classcs4home__core_1_1Efferent.html#afb82a486d99bde29ad86afec835bbeed" title="Constructs an Efferent object associated with a parent lifecycle node." alt="" coords="190,22,346,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,40,174,40,174,45,142,45"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="configure" name="configure">
+<area shape="rect" id="Node000001" title="Configures the SimpleImageOutput by creating publishers for each specified topic." alt="" coords="5,13,79,38"/>
+<area shape="rect" id="Node000002" href="$classcs4home__core_1_1Efferent.html#ae1e5db0312f358a67c5edef956a0cb0a" title="Creates a publisher for a specified topic and message type." alt="" coords="127,5,283,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,23,111,23,111,28,79,28"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="timer_callback" name="timer_callback">
+<area shape="rect" id="Node000001" title="Timer callback function that retrieves an image message and processes it." alt="" coords="5,5,111,31"/>
+<area shape="rect" id="Node000002" href="$classImageFilter.html#a01b541e3bbfdd9a91a76badbd8dd8f64" title="Processes an incoming image message by modifying its header." alt="" coords="159,5,285,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,16,143,16,143,21,111,21"/>
+</map>

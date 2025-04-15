@@ -1,0 +1,9 @@
+<map id="Core" name="Core">
+<area shape="rect" id="Node000001" title="Constructs a Core object associated with a parent lifecycle node." alt="" coords="247,67,295,92"/>
+<area shape="rect" id="Node000002" href="$classImageFilter.html#aeff0746e33b1156a5fb3564ce3a2b497" title="Constructs an ImageFilter object and initializes the parent lifecycle node." alt="" coords="23,29,181,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,73,163,58,164,53,232,68"/>
+<area shape="rect" id="Node000003" href="$classImageFilterCB.html#a6dfc742b85459b68cf8f12dcf3a3a826" title="Constructs an ImageFilterCB object and initializes the parent lifecycle node." alt="" coords="5,103,199,128"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="232,90,166,105,165,99,231,85"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="131,16,121,10,102,8,84,10,75,15,73,20,78,28,73,30,68,21,71,11,83,5,102,3,123,5,133,12"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="131,90,121,84,102,81,84,83,75,88,73,93,78,101,73,104,68,94,71,84,83,78,102,76,123,79,133,85"/>
+</map>

@@ -1,17 +1,17 @@
 <map id="CognitiveModule" name="CognitiveModule">
-<area shape="rect" id="Node000001" title="Extends the LifecycleNode to manage cognitive processing components in a ROS 2 lifecycle,..." alt="" coords="323,154,440,180"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,110,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,41,121,86,148,109,179,128,214,142,252,152,323,161,322,167,251,157,213,147,176,132,145,113,117,90,74,45"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="134,5,213,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,45,199,89,213,110,230,128,251,141,275,151,323,161,322,166,273,156,249,146,227,132,209,113,195,91,177,47"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="238,5,317,31"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="286,45,300,87,311,109,325,128,339,141,355,151,352,156,336,145,321,132,307,111,295,89,281,47"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="342,5,421,31"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="384,46,384,153,379,153,379,46"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="446,5,525,31"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="476,46,454,88,424,132,399,155,396,151,419,128,449,85,471,44"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="550,5,629,31"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="580,46,554,90,536,113,514,132,478,150,441,161,440,156,476,145,511,128,532,109,550,87,576,44"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="654,5,707,31"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="680,47,667,91,655,114,638,132,603,147,552,157,441,167,440,161,552,152,602,142,635,128,651,111,662,89,675,46"/>
+<area shape="rect" id="Node000001" title="Extends the LifecycleNode to manage cognitive processing components in a ROS 2 lifecycle,..." alt="" coords="234,195,454,688"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,99,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,82,236,288,232,291,82,85"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="123,5,192,72"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,71,181,118,200,170,229,233,224,235,195,172,176,120,163,72"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="216,5,285,72"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="260,71,281,170,283,178,278,179,276,171,255,72"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="310,5,378,72"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="347,72,347,178,342,178,342,72"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="403,5,472,72"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="433,72,408,179,403,178,428,71"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="496,5,565,72"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="520,72,477,172,464,201,459,199,472,170,515,70"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="598,5,640,72"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="615,72,602,120,580,172,527,251,467,323,463,320,523,248,575,169,597,119,610,71"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="process_in_image" name="process_in_image">
+<area shape="rect" id="Node000001" title="Processes incoming serialized image messages, applies a simple transformation, and republishes them." alt="" coords="127,5,253,31"/>
+<area shape="rect" id="Node000002" href="$classImageFilterCB.html#a01fe98fb7e1f6bc996da7374413178d7" title="Configures the ImageFilterCB component." alt="" coords="5,5,79,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,21,79,21,79,16,111,16"/>
+</map>

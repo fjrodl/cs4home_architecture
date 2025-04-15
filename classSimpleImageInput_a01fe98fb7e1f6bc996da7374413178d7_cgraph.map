@@ -1,0 +1,5 @@
+<map id="configure" name="configure">
+<area shape="rect" id="Node000001" title="Configures the SimpleImageInput by creating subscribers for each specified topic." alt="" coords="5,13,79,38"/>
+<area shape="rect" id="Node000002" href="$classcs4home__core_1_1Afferent.html#a481251c6494b301bbfbfd98107cfb0c7" title="Creates a subscriber for a specific topic and message type." alt="" coords="127,5,284,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,23,111,23,111,28,79,28"/>
+</map>

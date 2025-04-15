@@ -1,0 +1,13 @@
+<map id="load_component" name="load_component">
+<area shape="rect" id="Node000001" title="Loads a ROS 2 component dynamically." alt="" coords="108,104,224,130"/>
+<area shape="rect" id="Node000002" href="$cognitive__module__test_8cpp.html#a91dccc85e6d55e22cfad72e516af7ec5" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,97,50,34,53,29,137,92"/>
+<area shape="rect" id="Node000003" href="$cognitive__module__test_8cpp.html#a4092fb7799b0ef7bd5fa861e53904a36" title=" " alt="" coords="5,55,60,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,101,59,80,61,75,116,96"/>
+<area shape="rect" id="Node000004" href="$cognitive__module__test_8cpp.html#a06368dda46db7573c8e6737815468e4f" title=" " alt="" coords="5,104,60,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="92,120,60,120,60,114,92,114"/>
+<area shape="rect" id="Node000005" href="$cognitive__module__test_8cpp.html#a3f957425afcdfee04c6a8039ff7fc8f7" title=" " alt="" coords="5,153,60,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="116,138,61,159,59,154,114,133"/>
+<area shape="rect" id="Node000006" href="$cognitive__module__test_8cpp.html#a471ac84bb32a3c56238f1b0de7c451b6" title=" " alt="" coords="5,203,60,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="137,141,53,204,50,200,133,137"/>
+</map>

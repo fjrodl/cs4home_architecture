@@ -1,0 +1,5 @@
+<map id="create_subscriber" name="create_subscriber">
+<area shape="rect" id="Node000001" title="Creates a subscriber for a specific topic and message type." alt="" coords="238,5,362,31"/>
+<area shape="rect" id="Node000002" href="$classSimpleImageInput.html#a01fe98fb7e1f6bc996da7374413178d7" title="Configures the SimpleImageInput by creating subscribers for each specified topic." alt="" coords="5,5,190,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,21,190,21,190,16,222,16"/>
+</map>

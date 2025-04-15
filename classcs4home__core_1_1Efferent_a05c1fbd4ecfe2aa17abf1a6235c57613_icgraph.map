@@ -1,0 +1,5 @@
+<map id="publish" name="publish">
+<area shape="rect" id="Node000001" title="Publishes a serialized message to all configured publishers." alt="" coords="196,13,258,38"/>
+<area shape="rect" id="Node000002" href="$classSimpleImageOutput.html#a15c05749e158c409264b0fee345f6053" title="Publishes an image message to all configured topics." alt="" coords="5,5,148,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,28,148,28,148,23,180,23"/>
+</map>
